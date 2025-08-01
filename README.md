@@ -27,14 +27,14 @@ Permite transformar URLs longas em URLs curtas, armazená-las no banco e redirec
 
 ### 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/url-shortener-nodejs.git
-cd url-shortener-nodejs
+git clone https://github.com/jeffersonalionco/encurta-tudo.git
+cd encurta-tudo
 ```
 
 
 ### 2. Rode o projeto:
 ```
-node server.js
+npm start
 ```
 
 ---
@@ -42,27 +42,27 @@ node server.js
 ## 🔍 Exemplo de uso
 
 ### Encurtar URL (via navegador):
-GET http://localhost:3000/encurtar?url=https://www.google.com
+GET http://localhost:3001/encurtar?url=https://www.google.com
 
 **Resposta JSON:**
 
 ```bash
 {
   "urlOriginal": "https://www.google.com",
-  "urlEncurtada": "http://localhost:3000/Ab12Xy"
+  "urlEncurtada": "http://localhost:3001/Ab12Xy"
 }
 ```
 
 ### Redirecionar:
 Acesse no navegador:
-http://localhost:3000/Ab12Xy
+http://localhost:3001/Ab12Xy
 
 ---
 
 ## 🗂 Estrutura do Projeto
 
 ```bash
-url-shortener/
+encurta-tudo/
 ├── src/
 │   ├── db.js           # Banco de dados SQLite
 │   ├── routes.js       # Rotas da API
